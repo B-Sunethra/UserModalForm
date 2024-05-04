@@ -86,7 +86,7 @@ const App = () => {
           <div className="modal-content" onClick={handleModalClick}>
             <form onSubmit={handleSubmit}>
               <label>Username:</label>
-              <input type="text" name="username" value={formData.username} onChange={handleChange} />
+              <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} />
               {errors.username && <div className="error">{errors.username}</div>}
   
               <label>Email Address:</label>
@@ -94,10 +94,10 @@ const App = () => {
               {errors.email && <div className="error">{errors.email}</div>}
   
               <label>Phone Number:</label>
-              <input type="text" name="phone" value={formData.phone} onChange={handleChange} />
+              <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleChange} />
   
               <label>Date of Birth:</label>
-              <input type="date" name="dob" value={formData.dob} onChange={handleChange} />
+              <input type="date" id="dob" name="dob" value={formData.dob} onChange={handleChange} />
   
               <button type="submit" className="submit-button">Submit</button>
             </form>
