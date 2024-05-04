@@ -90,7 +90,7 @@ const App = () => {
               {errors.username && <div className="error">{errors.username}</div>}
   
               <label>Email Address:</label>
-              <input type="email" name="email" value={formData.email} onChange={handleChange} />
+              <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
               {errors.email && <div className="error">{errors.email}</div>}
   
               <label>Phone Number:</label>
